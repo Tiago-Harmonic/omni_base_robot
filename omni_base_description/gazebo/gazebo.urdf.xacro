@@ -42,7 +42,12 @@
       <odometryFrame>odom</odometryFrame>
       <odometryRate>50.0</odometryRate>
       <robotBaseFrame>base_footprint</robotBaseFrame>
-      <publishOdometryTf>true</publishOdometryTf>
+      <xacro:if value="${is_public_sim}">
+        <publishOdometryTf>true</publishOdometryTf>
+      </xacro:if>
+      <xacro:unless value="${is_public_sim}">
+        <publishOdometryTf>false</publishOdometryTf>
+      </xacro:unless>
       <xacro:if value="${is_multiple}">
         <!-- Do something about multirobot -->
       </xacro:if>

@@ -34,10 +34,15 @@ def declare_args(context, *args, **kwargs):
         'use_sim_time', default_value='False',
         description='Use simulation time')
 
+    public_sim_arg = DeclareLaunchArgument(
+        'is_public_sim', default_value='False',
+        description='Use public simulation')
+
     robot_name = read_launch_argument('robot_name', context)
 
     return [get_laser_model(robot_name),
-            sim_time_arg]
+            sim_time_arg,
+            public_sim_arg]
 
 
 def launch_setup(context, *args, **kwargs):
@@ -49,6 +54,7 @@ def launch_setup(context, *args, **kwargs):
         {
             'laser_model': read_launch_argument('laser_model', context),
             'use_sim': read_launch_argument('use_sim_time', context),
+            'public_sim': read_launch_argument('is_public_sim', context),
         },
     )}
 

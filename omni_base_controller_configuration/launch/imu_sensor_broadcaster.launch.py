@@ -27,4 +27,3 @@ def generate_launch_description():
             get_package_share_directory('omni_base_controller_configuration'),
             'config', 'imu_sensor_broadcaster.yaml')
     )
-
