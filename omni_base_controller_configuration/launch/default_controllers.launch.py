@@ -26,8 +26,6 @@ def generate_launch_description():
     joint_state_broadcaster_launch = include_launch_py_description(
         'omni_base_controller_configuration', ['launch', 'joint_state_broadcaster.launch.py'])
 
-    
-    
     imu_sensor_broadcaster_launch = include_launch_py_description(
         'omni_base_controller_configuration', ['launch', 'imu_sensor_broadcaster.launch.py'])
 
