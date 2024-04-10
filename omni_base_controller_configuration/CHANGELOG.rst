@@ -2,6 +2,11 @@
 Changelog for package omni_base_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add ros2controlcli dependency
+* Contributors: Noel Jimenez
+
 2.0.6 (2024-03-14)
 ------------------
 * Merge branch 'dtk/feat/force-based-move-plugin' into 'humble-devel'
