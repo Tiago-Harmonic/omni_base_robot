@@ -2,6 +2,14 @@
 Changelog for package omni_base_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/enable-dlo-sim' into 'humble-devel'
+  enable odom_tf gazebo only in public sim and laser noise fix
+  See merge request robots/omni_base_robot!20
+* enable odom_tf gazebo only in public sim and laser noise fix
+* Contributors: andreacapodacqua
+
 2.0.7 (2024-04-10)
 ------------------
 * Add ros2controlcli dependency
