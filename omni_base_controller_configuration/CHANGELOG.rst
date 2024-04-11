@@ -2,8 +2,8 @@
 Changelog for package omni_base_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.9 (2024-04-11)
+------------------
 * Merge branch 'dtk/fix/update-module-numbers' into 'humble-devel'
   Dtk/fix/update module numbers
   See merge request robots/omni_base_robot!25

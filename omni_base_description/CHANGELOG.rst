@@ -2,8 +2,8 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.9 (2024-04-11)
+------------------
 * Merge branch 'omm/feat/planar_move_plugin' into 'humble-devel'
   Restored old plugin with is_public_sim checks
   See merge request robots/omni_base_robot!24
