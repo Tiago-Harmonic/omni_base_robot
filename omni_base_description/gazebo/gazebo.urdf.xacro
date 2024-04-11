@@ -36,24 +36,28 @@
       </xacro:unless>
     </plugin>    
     
-    <plugin filename="libgazebo_ros_force_based_move.so" name="gazebo_force_based_move" >
-      <commandTopic>mobile_base_controller/cmd_vel_unstamped</commandTopic>
-      <odometryTopic>mobile_base_controller/odom</odometryTopic>
-      <odometryFrame>odom</odometryFrame>
-      <odometryRate>50.0</odometryRate>
-      <robotBaseFrame>base_footprint</robotBaseFrame>
+    <plugin name="gazebo_ros_planar_move" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <remapping>cmd_vel:=mobile_base_controller/cmd_vel_unstamped</remapping>
+        <remapping>odom:=mobile_base_controller/odom</remapping>
+      </ros>
+      <update_rate>100</update_rate>
+      <publish_rate>1000</publish_rate>
+      <publish_odom>true</publish_odom>
       <xacro:if value="${is_public_sim}">
-        <publishOdometryTf>true</publishOdometryTf>
+        <publish_odom_tf>true</publish_odom_tf>
       </xacro:if>
       <xacro:unless value="${is_public_sim}">
-        <publishOdometryTf>false</publishOdometryTf>
+        <publish_odom_tf>false</publish_odom_tf>
       </xacro:unless>
-      <xacro:if value="${is_multiple}">
-        <!-- Do something about multirobot -->
-      </xacro:if>
       <xacro:unless value="${is_multiple}">
         <!-- Do something about multirobot -->
       </xacro:unless>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <covariance_x>0.0001</covariance_x>
+      <covariance_y>0.0001</covariance_y>
+      <covariance_yaw>0.01</covariance_yaw>
     </plugin>
 
   </gazebo>
