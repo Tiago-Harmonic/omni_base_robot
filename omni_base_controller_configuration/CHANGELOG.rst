@@ -2,6 +2,14 @@
 Changelog for package omni_base_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'dtk/fix/update-module-numbers' into 'humble-devel'
+  Dtk/fix/update module numbers
+  See merge request robots/omni_base_robot!25
+* Change module number to 00
+* Contributors: David ter Kuile, Noel Jimenez
+
 2.0.8 (2024-04-10)
 ------------------
 * Merge branch 'feat/enable-dlo-sim' into 'humble-devel'

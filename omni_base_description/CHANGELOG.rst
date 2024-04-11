@@ -2,6 +2,24 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'omm/feat/planar_move_plugin' into 'humble-devel'
+  Restored old plugin with is_public_sim checks
+  See merge request robots/omni_base_robot!24
+* Removing hector plugin dep
+* Restored old gazebo plugin
+* Merge branch 'dtk/fix/update-module-numbers' into 'humble-devel'
+  Dtk/fix/update module numbers
+  See merge request robots/omni_base_robot!25
+* Change module number to 00
+* Merge branch 'dtk/fix/remove-pmb2-dependency' into 'humble-devel'
+  Remove pmb2-description dependency
+  See merge request robots/omni_base_robot!22
+* Remove dependency of pmb2
+* Remove pmb2-description dependency
+* Contributors: David ter Kuile, Noel Jimenez, Oscar, andreacapodacqua, davidterkuile
+
 2.0.8 (2024-04-10)
 ------------------
 * Merge branch 'feat/enable-dlo-sim' into 'humble-devel'

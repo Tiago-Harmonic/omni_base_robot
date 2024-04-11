@@ -2,6 +2,9 @@
 Changelog for package omni_base_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.8 (2024-04-10)
 ------------------
 * Merge branch 'feat/enable-dlo-sim' into 'humble-devel'
