@@ -2,8 +2,8 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.10 (2024-04-18)
+-------------------
 * Merge branch 'fix/ros2-missing-deps' into 'humble-devel'
   adding missing deps
   See merge request robots/omni_base_robot!26
