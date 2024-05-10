@@ -19,6 +19,7 @@
   
   <xacro:property name="default_calibration_path" value="$(find omni_base_description)"/>
   <xacro:property name="calibration_path" value="$(optenv omni_base_description_calibration_path ${default_calibration_path})"/>
+  <xacro:property name="use_sim" value="$(arg use_sim)" />
 
   <!-- base/roof RGBD calibratable characteristics -->
   <!-- spec: rgbd_z, rgbd_R and rgbd_P -->
@@ -39,7 +40,7 @@
     name="base_rgbd_camera" 
     parent="base_link"
     topics_ns="base_rgbd_camera"
-    use_nominal_extrinsics="${simulation}">
+    use_nominal_extrinsics="${use_sim}">
     <origin 
         xyz="${base_rgbd_x}
              ${base_rgbd_y}
@@ -55,7 +56,7 @@
     name="roof_rgbd_camera"
     parent="base_link"
     topics_ns="roof_rgbd_camera"
-    use_nominal_extrinsics="${simulation}">
+    use_nominal_extrinsics="${use_sim}">
     <origin
         xyz="${roof_rgbd_x}
              ${roof_rgbd_y}

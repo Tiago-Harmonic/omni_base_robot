@@ -22,7 +22,6 @@
   <xacro:arg name="rgbd_sensors" default="false"/> <!-- false, true-->
   <xacro:arg name="multiple" default="false"/>
   <xacro:arg name="public_sim" default="false"/>
-  <xacro:arg name="simulation" default="false"/>
   <xacro:arg name="namespace" default=""/>
   <xacro:arg name="is_public_sim" default="false"/>
 
