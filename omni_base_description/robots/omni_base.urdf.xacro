@@ -22,10 +22,12 @@
   <xacro:arg name="multiple" default="false"/>
   <xacro:arg name="public_sim" default="false"/>
   <xacro:arg name="namespace" default=""/>
+  <xacro:arg name="is_public_sim" default="false"/>
+
   <xacro:property name="front_laser_model" value="$(arg front_laser_model)" />
   <xacro:property name="rear_laser_model" value="$(arg rear_laser_model)" />
   <xacro:property name="is_multiple" value="$(arg multiple)" />
-  <xacro:property name="is_public_sim" value="$(arg public_sim)" />
+  <xacro:property name="is_public_sim" value="$(arg is_public_sim)" />
   <xacro:property name="nsp" value="$(arg namespace)" />
 
   <xacro:if value="${front_laser_model not in ['false', 'sick-551', 'sick-561', 'sick-571', 'hokuyo']}">
