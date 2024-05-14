@@ -25,15 +25,15 @@
   <!-- spec: rgbd_z, rgbd_R and rgbd_P -->
   <xacro:include filename="${calibration_path}/urdf/base/base_omni_base_calib.urdf.xacro"/>
 
-  <!-- base RGBD characteristics -->
-  <xacro:property name="base_rgbd_x" value="0.327327"/>
-  <xacro:property name="base_rgbd_y" value="0.0"/>
-  <xacro:property name="base_rgbd_Y" value="0.0"/>
-
   <!-- roof RGBD characteristics -->
-  <xacro:property name="roof_rgbd_x" value="0.297329"/>
+  <xacro:property name="roof_rgbd_x" value="0.327327"/>
   <xacro:property name="roof_rgbd_y" value="0.0"/>
   <xacro:property name="roof_rgbd_Y" value="0.0"/>
+
+  <!-- base RGBD characteristics -->
+  <xacro:property name="base_rgbd_x" value="0.297329"/>
+  <xacro:property name="base_rgbd_y" value="0.0"/>
+  <xacro:property name="base_rgbd_Y" value="0.0"/>
 
   <!-- RGBD base -->
   <xacro:sensor_d435
