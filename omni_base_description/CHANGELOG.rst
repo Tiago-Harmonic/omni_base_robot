@@ -2,6 +2,23 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/aca/realsense-ros2' into 'humble-devel'
+  added realsense support
+  See merge request robots/omni_base_robot!28
+* Revert "swap camera names"
+  This reverts commit 10b11403fde04f52c57782ff8e30f3e92cd042cc.
+* swap camera names
+* removed simulation arg and fix use_nominal_extrinsic
+* added rgbd_sensors to module
+* added realsense support
+* Merge branch 'fix/is_public_sim_argument' into 'humble-devel'
+  add missing argument is_public_sim
+  See merge request robots/omni_base_robot!29
+* add missing argument is_public_sim
+* Contributors: Aina Irisarri, andreacapodacqua, davidterkuile
+
 2.0.10 (2024-04-18)
 -------------------
 * Merge branch 'fix/ros2-missing-deps' into 'humble-devel'
