@@ -2,8 +2,8 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.11 (2024-05-21)
+-------------------
 * Merge branch 'feat/aca/realsense-ros2' into 'humble-devel'
   added realsense support
   See merge request robots/omni_base_robot!28
