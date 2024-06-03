@@ -2,6 +2,15 @@
 Changelog for package omni_base_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/fix/min-acc' into 'humble-devel'
+  added min acceleration parameters
+  See merge request robots/omni_base_robot!31
+* typo
+* added min acceleration parameters
+* Contributors: antoniobrandi
+
 2.0.12 (2024-06-03)
 -------------------
 

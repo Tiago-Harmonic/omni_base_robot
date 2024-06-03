@@ -2,6 +2,9 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.12 (2024-06-03)
 -------------------
 * Merge branch 'fix/aca/reduced-laser-noise' into 'humble-devel'
