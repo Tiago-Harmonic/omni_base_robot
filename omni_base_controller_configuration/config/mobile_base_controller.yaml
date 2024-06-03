@@ -64,8 +64,8 @@ mobile_base_controller:
         has_velocity_limits    : true
         max_velocity           : 2.09 # 120.0º reduce pendulum effect
         has_acceleration_limits: true
-        max_acceleration       : 2.09 # 90.0º/s^2
-        min_acceleration       : -2.09 # 90.0º/s^2
+        max_acceleration       : 2.09 # 120.0º/s^2
+        min_acceleration       : -2.09 # 120.0º/s^2
         has_jerk_limits        : false
         max_jerk               : 10.47 # 600.0º/s^3
     space:
