@@ -2,6 +2,14 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/aca/reduced-laser-noise' into 'humble-devel'
+  reduced laser_noise
+  See merge request robots/omni_base_robot!30
+* reduced laser_noise
+* Contributors: andreacapodacqua
+
 2.0.11 (2024-05-21)
 -------------------
 * Merge branch 'feat/aca/realsense-ros2' into 'humble-devel'
