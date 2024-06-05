@@ -16,6 +16,7 @@
 -->
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <!-- MACRO DEFINITION -->
   <xacro:macro name="antenna" params="name parent *origin reflect:=1">
     <link name="${name}_link">
       <inertial>

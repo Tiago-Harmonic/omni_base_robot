@@ -16,8 +16,10 @@
  -->
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <!-- INCLUDES -->
   <xacro:include filename="$(find omni_base_description)/urdf/sensors/sick_tim561_laser.gazebo.xacro" />
 
+  <!-- MACRO DEFINITION -->
   <xacro:macro name="sick_tim561_laser" params="name parent *origin ros_topic update_rate min_angle max_angle">
 
      <link name="${name}_link" type="laser">
