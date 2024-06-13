@@ -65,7 +65,7 @@ def launch_setup(context, *args, **kwargs):
         },
     )
 
-    robot_description = ParameterValue(robot_description_content, value_type=None)
+    robot_description = ParameterValue(robot_description_content, value_type=str)
     # which parses the param as YAML instead of string
     rsp = Node(package='robot_state_publisher',
                executable='robot_state_publisher',
