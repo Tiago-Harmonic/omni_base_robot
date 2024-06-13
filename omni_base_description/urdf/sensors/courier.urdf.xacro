@@ -22,7 +22,7 @@
   <xacro:property name="use_sim" value="$(arg use_sim)" />
 
   <!-- base/roof RGBD calibratable characteristics -->
-  <!-- spec: rgbd_z, rgbd_R and rgbd_P -->
+  <!-- spec; rgbd_z, rgbd_R and rgbd_P -->
   <xacro:include filename="${calibration_path}/urdf/base/base_omni_base_calib.urdf.xacro"/>
 
   <!-- base RGBD characteristics -->

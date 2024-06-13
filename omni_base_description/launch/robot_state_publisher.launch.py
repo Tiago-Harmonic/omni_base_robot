@@ -26,6 +26,7 @@ from launch_pal.robot_utils import (get_laser_model,
                                     get_robot_name)
 from launch_param_builder import load_xacro
 from launch_ros.actions import Node
+from launch_ros.parameter_descriptions import ParameterValue
 
 
 def declare_args(context, *args, **kwargs):
@@ -52,7 +53,7 @@ def declare_args(context, *args, **kwargs):
 
 def launch_setup(context, *args, **kwargs):
 
-    robot_description = {'robot_description': load_xacro(
+    robot_description_content = load_xacro(
         Path(os.path.join(
             get_package_share_directory('omni_base_description'), 'robots',
             'omni_base.urdf.xacro')),
@@ -62,13 +63,15 @@ def launch_setup(context, *args, **kwargs):
             'public_sim': read_launch_argument('is_public_sim', context),
             'rgbd_sensors': read_launch_argument('rgbd_sensors', context),
         },
-    )}
+    )
 
+    robot_description = ParameterValue(robot_description_content, value_type=str)
+    # which parses the param as YAML instead of string
     rsp = Node(package='robot_state_publisher',
                executable='robot_state_publisher',
                output='both',
-               parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')},
-                           robot_description])
+               parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time'),
+                            "robot_description": robot_description}])
 
     return [rsp]
 
