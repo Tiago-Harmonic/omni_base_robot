@@ -2,8 +2,8 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.14 (2024-06-13)
+-------------------
 * Merge branch 'fix/robot_state_publisher' into 'humble-devel'
   fix robot state publisher launch file
   See merge request robots/omni_base_robot!33
