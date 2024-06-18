@@ -73,7 +73,7 @@ def declare_actions(
     )
     launch_description.add_action(joint_state_broadcaster)
 
-    # Joint state broadcaster
+    # IMU sensor broadcaster
     imu_sensor_broadcaster = GroupAction(
         [
             generate_load_controller_launch_description(

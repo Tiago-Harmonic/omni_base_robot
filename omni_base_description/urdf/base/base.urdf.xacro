@@ -29,7 +29,9 @@
   <xacro:property name="suspension_sagital_separation" value="0.345"/>
 
   <!-- INCLUDES -->
+  <xacro:include filename="$(find omni_base_description)/urdf/base/base.gazebo.xacro"/>
   <xacro:include filename="$(find omni_base_description)/urdf/wheels/wheel.urdf.xacro"/>
+  <xacro:include filename="$(find omni_base_description)/urdf/objects/antenna.urdf.xacro"/>
   <xacro:include filename="$(find omni_base_description)/urdf/objects/antenna.urdf.xacro"/>
 
   <!-- MACRO DEFINITION-->
@@ -124,6 +126,9 @@
     <xacro:wheel side="front_left"  sagital_reflect="-1.0" frontal_reflect="1.0" radius="${wheel_radius}" width="${wheel_width}" torque="${wheel_torque}" velocity="${wheel_velocity}" frontal_separation="${wheel_pair_separation}"  sagital_separation="${suspension_sagital_separation}" parent="${name}_link"/>
     <xacro:wheel side="rear_right"  sagital_reflect="1.0" frontal_reflect="-1.0" radius="${wheel_radius}" width="${wheel_width}" torque="${wheel_torque}" velocity="${wheel_velocity}" frontal_separation="${wheel_pair_separation}" sagital_separation="${suspension_sagital_separation}" parent="${name}_link"/>
     <xacro:wheel side="rear_left"   sagital_reflect="-1.0" frontal_reflect="-1.0" radius="${wheel_radius}" width="${wheel_width}" torque="${wheel_torque}" velocity="${wheel_velocity}" frontal_separation="${wheel_pair_separation}" sagital_separation="${suspension_sagital_separation}" parent="${name}_link"/>
+
+    <!-- Gazebo config-->
+    <xacro:base_gazebo name="${name}"/>
 
   </xacro:macro>
 
