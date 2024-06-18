@@ -29,8 +29,8 @@ limitations under the License.
       <gazebo>
         <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
           <parameters>$(find omni_base_description)/ros2_control/gazebo_controller_manager_cfg.yaml</parameters>
-          <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
-          <control_period>0.001</control_period>
+          <!-- <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+          <control_period>0.001</control_period> -->
         </plugin>
       </gazebo>
     </xacro:if>

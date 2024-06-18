@@ -38,7 +38,7 @@
 
   <!-- base/roof RGBD calibratable characteristics -->
   <!-- spec: rgbd_z, rgbd_R and rgbd_P -->
-  <xacro:include filename="${calibration_path}/urdf/base/base_omni_base_calib.urdf.xacro"/>
+  <xacro:include filename="${calibration_path}/urdf/cameras_add_on/base_omni_base_calib.urdf.xacro"/>
   <xacro:include filename="$(find pal_urdf_utils)/urdf/deg_to_rad.urdf.xacro" />
 
   <!-- RGBD base -->

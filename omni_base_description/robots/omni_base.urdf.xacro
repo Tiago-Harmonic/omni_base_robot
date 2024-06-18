@@ -19,10 +19,10 @@
 
   <!-- ARGUMENTS -->
 
-  <!-- false, hokuyo, sick-551, sick-561, sick-571-->
+  <!-- no-laser, hokuyo, sick-551, sick-561, sick-571-->
   <xacro:arg name="front_laser_model" default="sick-571"/>
 
-  <!-- false, hokuyo, sick-551, sick-561, sick-571-->
+  <!-- no-laser, hokuyo, sick-551, sick-561, sick-571-->
   <xacro:arg name="rear_laser_model" default="sick-571"/>
 
   <!-- false, true-->
@@ -42,10 +42,10 @@
   <xacro:property name="rgbd_sensors" value="$(arg rgbd_sensors)"/>
 
   <!-- HW configuration check -->
-  <xacro:if value="${front_laser_model not in ['false', 'sick-551', 'sick-561', 'sick-571', 'hokuyo']}">
+  <xacro:if value="${front_laser_model not in ['no-laser', 'sick-551', 'sick-561', 'sick-571', 'hokuyo']}">
     <xacro:wrong_laser_model/>
   </xacro:if>
-  <xacro:if value="${rear_laser_model not in ['false', 'sick-551', 'sick-561', 'sick-571', 'hokuyo']}">
+  <xacro:if value="${rear_laser_model not in ['no-laser', 'sick-551', 'sick-561', 'sick-571', 'hokuyo']}">
     <xacro:wrong_laser_model/>
   </xacro:if>
 
