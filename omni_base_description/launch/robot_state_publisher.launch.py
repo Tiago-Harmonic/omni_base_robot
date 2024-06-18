@@ -34,6 +34,7 @@ class LaunchArguments(LaunchArgumentsBase):
     laser_model: DeclareLaunchArgument = OmniBaseArgs.laser_model
     rgbd_sensors: DeclareLaunchArgument = OmniBaseArgs.rgbd_sensors
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
+    is_public_sim: DeclareLaunchArgument = CommonArgs.is_public_sim
 
 
 def generate_launch_description():
@@ -91,6 +92,7 @@ def create_robot_description_param(context, *args, **kwargs):
         'rear_laser_model': read_launch_argument('laser_model', context),
         'rgbd_sensors': read_launch_argument('rgbd_sensors', context),
         'use_sim_time': read_launch_argument('use_sim_time', context),
+        'is_public_sim': read_launch_argument('is_public_sim', context),
     }
     robot_description = load_xacro(xacro_file_path, xacro_input_args)
 

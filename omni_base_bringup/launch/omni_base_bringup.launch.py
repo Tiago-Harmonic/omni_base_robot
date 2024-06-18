@@ -26,6 +26,7 @@ class LaunchArguments(LaunchArgumentsBase):
     laser_model: DeclareLaunchArgument = OmniBaseArgs.laser_model
     rgbd_sensors: DeclareLaunchArgument = OmniBaseArgs.rgbd_sensors
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
+    is_public_sim: DeclareLaunchArgument = CommonArgs.is_public_sim
 
 
 def generate_launch_description():
@@ -48,7 +49,9 @@ def declare_actions(
     default_controllers = include_scoped_launch_py_description(
         pkg_name="omni_base_controller_configuration",
         paths=["launch", "default_controllers.launch.py"],
-        launch_arguments={}
+        launch_arguments={
+            "is_public_sim": launch_args.is_public_sim,
+        }
     )
 
     launch_description.add_action(default_controllers)
@@ -71,6 +74,7 @@ def declare_actions(
             "laser_model": launch_args.laser_model,
             "has_courier_rgbd_sensors": launch_args.rgbd_sensors,
             "use_sim_time": launch_args.use_sim_time,
+            "is_public_sim": launch_args.is_public_sim,
         },
     )
 

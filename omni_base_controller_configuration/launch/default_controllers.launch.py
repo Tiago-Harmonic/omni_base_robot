@@ -14,16 +14,18 @@
 
 import os
 from dataclasses import dataclass
-from launch_pal.arg_utils import LaunchArgumentsBase
+from launch_pal.arg_utils import LaunchArgumentsBase, CommonArgs
 from launch import LaunchDescription
 from ament_index_python.packages import get_package_share_directory
 from controller_manager.launch_utils import generate_load_controller_launch_description
-from launch.actions import GroupAction
+from launch.actions import GroupAction, DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
+from launch.conditions import UnlessCondition
 
 
 @dataclass(frozen=True)
 class LaunchArguments(LaunchArgumentsBase):
-    pass
+    is_public_sim: DeclareLaunchArgument = CommonArgs.is_public_sim
 
 
 def generate_launch_description():
@@ -54,6 +56,7 @@ def declare_actions(
                     pkg_share_folder, 'config', 'mobile_base_controller.yaml')
             )
         ],
+        condition=UnlessCondition(LaunchConfiguration("is_public_sim"))
     )
     launch_description.add_action(base_controller)
 

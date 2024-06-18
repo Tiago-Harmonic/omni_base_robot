@@ -30,6 +30,7 @@ class LaunchArguments(LaunchArgumentsBase):
     laser_model: DeclareLaunchArgument = OmniBaseArgs.laser_model
     rgbd_sensors: DeclareLaunchArgument = OmniBaseArgs.rgbd_sensors
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
+    is_public_sim: DeclareLaunchArgument = CommonArgs.is_public_sim
 
 
 def generate_launch_description():
@@ -56,6 +57,7 @@ def declare_actions(
             "laser_model": launch_args.laser_model,
             "rgbd_sensors": launch_args.rgbd_sensors,
             "use_sim_time": launch_args.use_sim_time,
+            "is_public_sim": launch_args.is_public_sim,
         },
     )
 
