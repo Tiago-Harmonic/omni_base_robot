@@ -12,12 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from dataclasses import dataclass
+
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
+from launch_pal.arg_utils import CommonArgs, LaunchArgumentsBase
 from launch_pal.include_utils import include_scoped_launch_py_description
-from launch_pal.arg_utils import LaunchArgumentsBase, CommonArgs
 from launch_pal.robot_arguments import OmniBaseArgs
-from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
@@ -47,34 +48,34 @@ def declare_actions(
     launch_description: LaunchDescription, launch_args: LaunchArguments
 ):
     default_controllers = include_scoped_launch_py_description(
-        pkg_name="omni_base_controller_configuration",
-        paths=["launch", "default_controllers.launch.py"],
+        pkg_name='omni_base_controller_configuration',
+        paths=['launch', 'default_controllers.launch.py'],
         launch_arguments={
-            "is_public_sim": launch_args.is_public_sim,
+            'is_public_sim': launch_args.is_public_sim,
         }
     )
 
     launch_description.add_action(default_controllers)
 
     twist_mux = include_scoped_launch_py_description(
-        pkg_name="omni_base_bringup",
-        paths=["launch", "twist_mux.launch.py"],
+        pkg_name='omni_base_bringup',
+        paths=['launch', 'twist_mux.launch.py'],
         launch_arguments={
-            "use_sim_time": launch_args.use_sim_time,
+            'use_sim_time': launch_args.use_sim_time,
         },
     )
 
     launch_description.add_action(twist_mux)
 
     robot_state_publisher = include_scoped_launch_py_description(
-        pkg_name="omni_base_description",
-        paths=["launch", "robot_state_publisher.launch.py"],
+        pkg_name='omni_base_description',
+        paths=['launch', 'robot_state_publisher.launch.py'],
         launch_arguments={
-            "wheel_model": launch_args.wheel_model,
-            "laser_model": launch_args.laser_model,
-            "rgbd_sensors": launch_args.rgbd_sensors,
-            "use_sim_time": launch_args.use_sim_time,
-            "is_public_sim": launch_args.is_public_sim,
+            'wheel_model': launch_args.wheel_model,
+            'laser_model': launch_args.laser_model,
+            'rgbd_sensors': launch_args.rgbd_sensors,
+            'use_sim_time': launch_args.use_sim_time,
+            'is_public_sim': launch_args.is_public_sim,
         },
     )
 

@@ -113,10 +113,10 @@
     </joint>
 
     <!-- Antennas -->
-    <xacro:antenna name="base_antenna_right" parent="base_link" reflect="1">
+    <xacro:antenna name="${name}_antenna_right" parent="${name}_link" reflect="1">
       <origin xyz="-0.2015 -0.13 0.2165" rpy="0 0 0" />
     </xacro:antenna>
-    <xacro:antenna name="base_antenna_left" parent="base_link" reflect="-1">
+    <xacro:antenna name="${name}_antenna_left" parent="${name}_link" reflect="-1">
       <origin xyz="-0.2015 0.13 0.2165" rpy="0 0 0" />
     </xacro:antenna>
 

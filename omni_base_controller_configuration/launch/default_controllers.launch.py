@@ -12,15 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
 from dataclasses import dataclass
-from launch_pal.arg_utils import LaunchArgumentsBase, CommonArgs
-from launch import LaunchDescription
+import os
+
 from ament_index_python.packages import get_package_share_directory
 from controller_manager.launch_utils import generate_load_controller_launch_description
-from launch.actions import GroupAction, DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration
+from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument, GroupAction
 from launch.conditions import UnlessCondition
+from launch.substitutions import LaunchConfiguration
+from launch_pal.arg_utils import CommonArgs, LaunchArgumentsBase
 
 
 @dataclass(frozen=True)
@@ -44,19 +45,19 @@ def generate_launch_description():
 def declare_actions(
     launch_description: LaunchDescription, launch_args: LaunchArguments
 ):
-    pkg_share_folder = get_package_share_directory("omni_base_controller_configuration")
+    pkg_share_folder = get_package_share_directory('omni_base_controller_configuration')
 
     # Base controller
     base_controller = GroupAction(
         [
             generate_load_controller_launch_description(
-                controller_name="mobile_base_controller",
+                controller_name='mobile_base_controller',
                 controller_type='omni_drive_controller/OmniDriveController',
                 controller_params_file=os.path.join(
                     pkg_share_folder, 'config', 'mobile_base_controller.yaml')
             )
         ],
-        condition=UnlessCondition(LaunchConfiguration("is_public_sim"))
+        condition=UnlessCondition(LaunchConfiguration('is_public_sim'))
     )
     launch_description.add_action(base_controller)
 
@@ -64,8 +65,8 @@ def declare_actions(
     joint_state_broadcaster = GroupAction(
         [
             generate_load_controller_launch_description(
-                controller_name="joint_state_broadcaster",
-                controller_type="joint_state_broadcaster/JointStateBroadcaster",
+                controller_name='joint_state_broadcaster',
+                controller_type='joint_state_broadcaster/JointStateBroadcaster',
                 controller_params_file=os.path.join(
                     pkg_share_folder, 'config', 'joint_state_broadcaster.yaml'))
         ],
