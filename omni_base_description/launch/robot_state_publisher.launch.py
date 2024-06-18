@@ -87,7 +87,8 @@ def create_robot_description_param(context, *args, **kwargs):
     )
 
     xacro_input_args = {
-        'laser_model': read_launch_argument('laser_model', context),
+        'front_laser_model': read_launch_argument('laser_model', context),
+        'rear_laser_model': read_launch_argument('laser_model', context),
         'rgbd_sensors': read_launch_argument('rgbd_sensors', context),
         'use_sim_time': read_launch_argument('use_sim_time', context),
     }
