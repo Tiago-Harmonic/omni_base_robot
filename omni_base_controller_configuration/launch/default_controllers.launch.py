@@ -49,7 +49,7 @@ def declare_actions(
         [
             generate_load_controller_launch_description(
                 controller_name="mobile_base_controller",
-                controller_type='diff_drive_controller/OmniDriveController',
+                controller_type='omni_drive_controller/OmniDriveController',
                 controller_params_file=os.path.join(
                     pkg_share_folder, 'config', 'mobile_base_controller.yaml')
             )
