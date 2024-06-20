@@ -21,7 +21,8 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, GroupAction
 from launch.conditions import UnlessCondition
 from launch.substitutions import LaunchConfiguration
-from launch_pal.arg_utils import CommonArgs, LaunchArgumentsBase
+from launch_pal.robot_arguments import CommonArgs
+from launch_pal.arg_utils import LaunchArgumentsBase
 
 
 @dataclass(frozen=True)

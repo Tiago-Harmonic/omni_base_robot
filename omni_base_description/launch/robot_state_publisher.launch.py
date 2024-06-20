@@ -20,10 +20,10 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction, SetLaunchConfiguration
 from launch.substitutions import LaunchConfiguration
-from launch_pal.arg_utils import CommonArgs
+from launch_pal.robot_arguments import CommonArgs
 from launch_pal.arg_utils import LaunchArgumentsBase
 from launch_pal.arg_utils import read_launch_argument
-from launch_pal.robot_arguments import OmniBaseArgs
+from omni_base_description.launch_arguments import OmniBaseArgs
 from launch_param_builder import load_xacro
 from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
