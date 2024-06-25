@@ -21,13 +21,15 @@
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>launch_pal</exec_depend>
   <exec_depend>rviz2</exec_depend>
+  <exec_depend>gazebo_planar_move_plugin</exec_depend>
   <exec_depend>joint_state_publisher_gui</exec_depend>
   <exec_depend>launch_param_builder</exec_depend>
-  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>pal_urdf_utils</exec_depend>
   <exec_depend>realsense2_description</exec_depend>
   
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
+  <test_depend>launch_testing_ament_cmake</test_depend>
   <test_depend>urdf_test</test_depend>
 
   <export>

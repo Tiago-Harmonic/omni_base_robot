@@ -17,9 +17,7 @@
 
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!--File includes-->
-  <xacro:include filename="$(find omni_base_description)/urdf/deg_to_rad.xacro" />
-
+  <!-- MACRO DEFINITION -->
   <xacro:macro name="cameras_add_on" params="name parent">
     <link name="${name}_link">
       <inertial>
