@@ -2,6 +2,18 @@
 Changelog for package omni_base_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'tpe/upate_std_and_launch_arg' into 'humble-devel'
+  Standardize urdf + update lauch args
+  See merge request robots/omni_base_robot!32
+* Restructure gazebo urdf
+* Update linters
+* Add public sim
+* Fix base_controller type
+* Update URDF structure
+* Contributors: David ter Kuile, davidterkuile
+
 2.0.14 (2024-06-13)
 -------------------
 

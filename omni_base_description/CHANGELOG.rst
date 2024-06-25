@@ -2,6 +2,21 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'tpe/upate_std_and_launch_arg' into 'humble-devel'
+  Standardize urdf + update lauch args
+  See merge request robots/omni_base_robot!32
+* Restructure gazebo urdf
+* Update linters
+* Add public sim
+* Remove colons from urdf to avoid crash of ros2 control gazebo
+* Update launch arguments omni_base_description
+* Update URDF structure
+* Fix argument + tests
+* Standardize urdf + update lauch args
+* Contributors: David ter Kuile, davidterkuile, thomas.peyrucain
+
 2.0.14 (2024-06-13)
 -------------------
 * Merge branch 'fix/robot_state_publisher' into 'humble-devel'

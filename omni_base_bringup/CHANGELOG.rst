@@ -2,6 +2,18 @@
 Changelog for package omni_base_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'tpe/upate_std_and_launch_arg' into 'humble-devel'
+  Standardize urdf + update lauch args
+  See merge request robots/omni_base_robot!32
+* Update linters
+* Update arg name
+* Add public sim
+* Restructure luanch files omni_base_bringup
+* Update to joy_linux node
+* Contributors: David ter Kuile, davidterkuile
+
 2.0.14 (2024-06-13)
 -------------------
 
