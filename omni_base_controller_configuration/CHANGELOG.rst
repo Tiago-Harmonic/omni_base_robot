@@ -2,6 +2,14 @@
 Changelog for package omni_base_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'dtk/move-robot-args' into 'humble-devel'
+  Dtk/move robot args
+  See merge request robots/omni_base_robot!34
+* Change import for launch args
+* Contributors: David ter Kuile, davidterkuile
+
 2.0.15 (2024-06-25)
 -------------------
 * Merge branch 'tpe/upate_std_and_launch_arg' into 'humble-devel'
