@@ -2,8 +2,8 @@
 Changelog for package omni_base_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.16 (2024-06-26)
+-------------------
 * Merge branch 'dtk/move-robot-args' into 'humble-devel'
   Dtk/move robot args
   See merge request robots/omni_base_robot!34
