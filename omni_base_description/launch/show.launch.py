@@ -17,10 +17,10 @@ from dataclasses import dataclass
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
-from launch_pal.arg_utils import CommonArgs
+from launch_pal.robot_arguments import CommonArgs
 from launch_pal.arg_utils import LaunchArgumentsBase
 from launch_pal.include_utils import include_scoped_launch_py_description
-from launch_pal.robot_arguments import OmniBaseArgs
+from omni_base_description.launch_arguments import OmniBaseArgs
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
