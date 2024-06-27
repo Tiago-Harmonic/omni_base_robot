@@ -33,7 +33,7 @@ from launch_ros.parameter_descriptions import ParameterValue
 class LaunchArguments(LaunchArgumentsBase):
     wheel_model: DeclareLaunchArgument = OmniBaseArgs.wheel_model
     laser_model: DeclareLaunchArgument = OmniBaseArgs.laser_model
-    rgbd_sensors: DeclareLaunchArgument = OmniBaseArgs.rgbd_sensors
+    add_on_module: DeclareLaunchArgument = OmniBaseArgs.add_on_module
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
     is_public_sim: DeclareLaunchArgument = CommonArgs.is_public_sim
 
@@ -91,7 +91,7 @@ def create_robot_description_param(context, *args, **kwargs):
     xacro_input_args = {
         'front_laser_model': read_launch_argument('laser_model', context),
         'rear_laser_model': read_launch_argument('laser_model', context),
-        'rgbd_sensors': read_launch_argument('rgbd_sensors', context),
+        'add_on_module': read_launch_argument('add_on_module', context),
         'use_sim_time': read_launch_argument('use_sim_time', context),
         'is_public_sim': read_launch_argument('is_public_sim', context),
     }

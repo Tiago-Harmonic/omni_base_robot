@@ -29,7 +29,7 @@ from launch_ros.substitutions import FindPackageShare
 class LaunchArguments(LaunchArgumentsBase):
     wheel_model: DeclareLaunchArgument = OmniBaseArgs.wheel_model
     laser_model: DeclareLaunchArgument = OmniBaseArgs.laser_model
-    rgbd_sensors: DeclareLaunchArgument = OmniBaseArgs.rgbd_sensors
+    add_on_module: DeclareLaunchArgument = OmniBaseArgs.add_on_module
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
     is_public_sim: DeclareLaunchArgument = CommonArgs.is_public_sim
 
@@ -56,7 +56,7 @@ def declare_actions(
         launch_arguments={
             'wheel_model': launch_args.wheel_model,
             'laser_model': launch_args.laser_model,
-            'rgbd_sensors': launch_args.rgbd_sensors,
+            'add_on_module': launch_args.add_on_module,
             'use_sim_time': launch_args.use_sim_time,
             'is_public_sim': launch_args.is_public_sim,
         },
