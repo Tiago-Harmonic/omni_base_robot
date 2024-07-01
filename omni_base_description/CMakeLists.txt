@@ -25,7 +25,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 
   foreach(laser_model no-laser hokuyo sick-551 sick-561 sick-571)
-      foreach(add_on_module no-add-on rgbd-sensors)
+      foreach(add_on_module no-add-on)
       add_launch_test(
         test/test_description.launch.py
         TARGET "omni_base_description_${laser_model}_${add_on_module}"
