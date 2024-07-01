@@ -2,8 +2,8 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.18 (2024-07-01)
+-------------------
 * Merge branch 'dtk/disable-rgbd-test' into 'humble-devel'
   Disable realsense test
   See merge request robots/omni_base_robot!36
