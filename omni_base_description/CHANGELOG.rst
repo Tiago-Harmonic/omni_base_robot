@@ -2,6 +2,11 @@
 Changelog for package omni_base_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add warning for pal_module_cmake not found
+* Contributors: Noel Jimenez
+
 2.0.18 (2024-07-01)
 -------------------
 * Merge branch 'dtk/disable-rgbd-test' into 'humble-devel'
