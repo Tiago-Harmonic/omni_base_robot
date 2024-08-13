@@ -33,7 +33,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://omni_base_description/meshes/sensors/sick_tim551.stl" scale="1 1 1"/>
+          <mesh filename="file://$(find omni_base_description)/meshes/sensors/sick_tim551.stl" scale="1 1 1"/>
         </geometry>
         <material name="DarkGrey"/>
       </visual>

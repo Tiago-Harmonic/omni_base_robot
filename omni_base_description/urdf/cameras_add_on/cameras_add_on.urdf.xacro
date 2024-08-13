@@ -30,14 +30,14 @@
         <visual>
           <origin xyz="0 0 -0.04" rpy="1.57 0 1.57"/>
           <geometry>
-            <mesh filename="package://omni_base_description/meshes/cameras_add_on/cameras_add_on.stl" scale="1 1 1"/>
+            <mesh filename="file://$(find omni_base_description)/meshes/cameras_add_on/cameras_add_on.stl" scale="1 1 1"/>
           </geometry>
           <material name="White" />
         </visual>
         <collision>
           <origin xyz="0 0 -0.04" rpy="1.57 0 1.57"/>
           <geometry>
-            <mesh filename="package://omni_base_description/meshes/cameras_add_on/cameras_add_on.stl" scale="1 1 1"/>
+            <mesh filename="file://$(find omni_base_description)/meshes/cameras_add_on/cameras_add_on.stl" scale="1 1 1"/>
           </geometry>
           <material name="White" />
         </collision>
